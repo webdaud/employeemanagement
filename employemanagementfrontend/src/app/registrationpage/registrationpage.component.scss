@@ -1,0 +1,14 @@
+::ng-deep .mat-form-field-flex {
+  background: #317a7a !important;
+  color:white !important;
+}
+::ng-deep .mat-form-field-label {
+  color:white !important;
+}
+
+::ng-deep .mat-form-field-should-float {
+  color:white !important;
+}
+::ng-deep input:focus::placeholder {
+  color: white;
+}

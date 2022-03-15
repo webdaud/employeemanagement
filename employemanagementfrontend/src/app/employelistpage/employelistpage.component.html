@@ -1,0 +1,44 @@
+<div class="form" fxLayoutAlign="center " fxFlexFill>
+  <mat-card fxFlex="60">
+    <h2 style="background:none;color: #2c8b8b;text-align: center;margin-top: 0px;margin-bottom: 22px;">  EMPLOYEE INFORMATION </h2>
+    <div fxLayoutAlign="stretch" fxLayout="column">
+      <table class="mat-h5" style="text-align: center;">
+        <tr style="color: #098989!important;">
+          <th>ID</th>
+          <th>FIRST NAME</th>
+          <th>LAST NAME</th>
+          <th>STATUS</th>
+          <th>EMAIL</th>
+          <th>GROUP</th>
+          <th>ACTION</th>
+        </tr>
+        <tr *ngIf="!employee?.length" style="text-transform: uppercase;font-size: xx-small;text-align: left!important;">
+          <td colspan="7">THERE'S NO RECORD</td>
+        </tr>
+        <tr *ngFor="let information of employee" style="text-transform: uppercase;font-size: xx-small;">
+          <td>{{information.id}}</td>
+          <td>{{information.firstname}}</td>
+          <td>{{information.lastname}}</td>
+          <td>{{information.status}}</td>
+          <td>{{information.email}}</td>
+          <td>{{information.groupkaryawan}}</td>
+          <td>
+            <mat-button-toggle-group name="fontStyle" appearance="legacy" aria-label="Font Style">
+              <mat-button-toggle value="bold" style="background: #1ea554;color: white" (click)="employeedetailpagenavigate(information.id)">DETAIL</mat-button-toggle>
+              <mat-button-toggle value="bold" style="background: #cbcb32;color: white" (click)="employeeeditpagenavigate(information.id)">EDIT</mat-button-toggle>
+              <mat-button-toggle value="italic" style="background: #ff8d8d;color: white"(click)="employeedeletepagenavigate(information.id)">DELETE</mat-button-toggle>
+            </mat-button-toggle-group>
+
+          </td>
+        </tr>
+        <tr style="text-align: left!important;">
+          <td colspan="7"><a mat-button value="bold" style="background: #127474;color: white;margin-top: 35px!important;" (click)="employeeinsertpagenavigate()">ADD EMPLOYEE INFORMATION</a></td>
+        </tr>
+      </table>
+
+    </div>
+
+  </mat-card>
+</div>
+
+<router-outlet></router-outlet>

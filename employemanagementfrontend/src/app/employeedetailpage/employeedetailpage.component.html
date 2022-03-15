@@ -1,0 +1,26 @@
+<div class="form" fxLayoutAlign="center center" fxFlexFill>
+  <mat-card fxFlex="25">
+    <h2 style="background:none;color: #2c8b8b;text-align: center;margin-top: 0px;margin-bottom: 22px;">  EMPLOYEE INFORMATION DETAIL</h2>
+    <div fxLayoutAlign="stretch" fxLayout="column">
+       <h6>USERNAME</h6>
+       <h2>{{employeedetail.username}}</h2>
+       <h6>FIRSTNAME</h6>
+       <h2>{{employeedetail.firstname}}</h2>
+       <h6>LASTNAME</h6>
+       <h2>{{employeedetail.lastname}}</h2>
+       <h6>EMAIL</h6>
+       <h2>{{employeedetail.email}}</h2>
+       <h6>BIRTHDATE</h6>
+       <h2>{{employeedetail.birthdate}}</h2>
+       <h6>SALARY (Rupiah)</h6>
+       <h2>{{employeedetail.basicsalary}}</h2>
+       <h6>STATUS</h6>
+       <h2>{{employeedetail.status}}</h2>
+       <h6>GROUP</h6>
+       <h2>{{employeedetail.groupkaryawan}}</h2>
+       <h6>DESCRIPTION</h6>
+       <h2>{{employeedetail.description}}</h2>
+      <mat-button-toggle value="bold" style="background: #1ea554;color: white" (click)="employeeinformationback()">BACK</mat-button-toggle>
+    </div>
+  </mat-card>
+</div>

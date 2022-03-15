@@ -1,0 +1,44 @@
+<div class="form" fxLayoutAlign="center center" fxFlexFill>
+  <mat-card fxFlex="25">
+    <h2 style="background:none;color: #2c8b8b;text-align: center;margin-top: 0px;margin-bottom: 22px;">  EMPLOYEE INFORMATION EDIT</h2>
+    <form #formupdate=ngForm (ngSubmit)="employeeinformationupdate(formupdate.value)" fxLayoutAlign="stretch" fxLayout="column">
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>USERNAME</mat-label>
+        <input matInput placeholder="USERNAME" id="username" name="username" type="text" ngModel="{{employeeedit.username}}">
+      </mat-form-field>
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>FIRST NAME</mat-label>
+        <input matInput placeholder="FIRST NAME" id="firstname" name="firstname" type="text" ngModel="{{employeeedit.firstname}}">
+      </mat-form-field>
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>LAST NAME</mat-label>
+        <input matInput placeholder="LAST NAME" id="lastname" name="lastname" type="text" ngModel="{{employeeedit.lastname}}">
+      </mat-form-field>
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>EMAIL</mat-label>
+        <input matInput placeholder="EMAIL" id="email" name="email" type="email" ngModel="{{employeeedit.email}}">
+      </mat-form-field>
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>BIRTHDATE</mat-label>
+        <input matInput placeholder="BIRTHDATE" id="birthdate" name="birthdate" type="date" ngModel="{{employeeedit.birthdate}}">
+      </mat-form-field>
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>BASIC SALARY</mat-label>
+        <input matInput placeholder="BASIC SALARY" id="basicsalary" name="basicsalary" type="number" ngModel="{{employeeedit.basicsalary}}">
+      </mat-form-field>
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>STATUS</mat-label>
+        <input matInput placeholder="STATUS" id="status" name="status" type="text" ngModel="{{employeeedit.status}}">
+      </mat-form-field>
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>GROUP</mat-label>
+        <input matInput placeholder="GROUP" id="groupkaryawan" name="groupkaryawan" type="text" ngModel="{{employeeedit.groupkaryawan}}">
+      </mat-form-field>
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>DESCRIPTION</mat-label>
+        <textarea matInput placeholder="DESCRIPTION" id="description" name="description" ngModel="{{employeeedit.description}}"></textarea>
+      </mat-form-field>
+      <button type="submit" mat-button style="background: #127474;color: white">UPDATE</button>
+    </form>
+  </mat-card>
+</div>

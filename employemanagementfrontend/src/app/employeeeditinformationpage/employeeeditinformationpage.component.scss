@@ -1,0 +1,38 @@
+::ng-deep .mat-form-field-flex {
+  background: #317a7a !important;
+  color:white !important;
+}
+::ng-deep .mat-form-field-label {
+  color:white !important;
+}
+
+::ng-deep .mat-form-field-should-float {
+  color:white !important;
+}
+::ng-deep input:focus::placeholder {
+  color: white;
+}
+
+
+::ng-deep textarea::placeholder {
+  color: white;
+}
+textarea::-webkit-input-placeholder {
+  color: white;
+}
+
+textarea:-moz-placeholder {
+  color: white;
+}
+
+textarea::-moz-placeholder {
+  color: white;
+}
+
+textarea:-ms-input-placeholder {
+  color: white;
+}
+
+textarea::placeholder {
+  color: white;
+}

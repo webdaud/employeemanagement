@@ -1,0 +1,19 @@
+<div class="form" fxLayoutAlign="center center" fxFlexFill>
+  <mat-card fxFlex="25">
+<h2 style="background:none;color: #2c8b8b;text-align: center;margin-top: 0px;margin-bottom: 22px;"> LOGIN PAGE</h2>
+    <form #loginform=ngForm (ngSubmit)="loginformsubmit(loginform.value)" fxLayoutAlign="stretch" fxLayout="column">
+    <mat-form-field class="full-width" appearance="fill">
+      <mat-label>EMAIL</mat-label>
+      <input matInput placeholder="EMAIL" value="" type="email" id="email" name="email" ngModel required>
+    </mat-form-field>
+    <mat-form-field class="full-width" appearance="fill">
+      <mat-label>PASSWORD</mat-label>
+      <input matInput placeholder="PASSWORD" value="" type="password" id="password" name="password" ngModel required>
+    </mat-form-field>
+    <button type="submit" mat-button style="background: #127474;color: white">LOGIN</button>
+    <a mat-button routerLink="/registrationpage">REGISTER</a>
+  </form>
+  </mat-card>
+  <mat-grid-list cols="1" >
+    </mat-grid-list>
+</div>
