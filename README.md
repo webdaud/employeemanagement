@@ -12,7 +12,7 @@ This project is used by the following software :
 
 - IntelIJ Community Edition
 - OpenJDK 17
-- Config DB : resources/application.properties 
+- Navicat 16
 
 
 ## Backend Spring
@@ -26,6 +26,7 @@ url : localhost:8080
 ## Backend Angular 
 
 ```bash
+npm install
 ng serve
 url : localhost:4200
 ```
